@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\Roopal\source\repos\TWTCMachineLearning\TWTCMachineLearning\TWTCMachineLearning.xml</DocumentationFile>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>Aashish Mehta</Authors>
+    <Company>Aashish Mehta</Company>
+    <Description>A simple machine learning program that allows you to use and save weights and biases as CSV files.
+
+WARNING: This was created as a learning exercise. It works, but is very brittle.</Description>
+    <PackageTags>Machine learning, CSV</PackageTags>
+    <PackageId>TWTCMachineLearning_AashishM</PackageId>
+    <PackageReleaseNotes>Hello, world</PackageReleaseNotes>
+    <NeutralLanguage></NeutralLanguage>
+  </PropertyGroup>
+
+</Project>

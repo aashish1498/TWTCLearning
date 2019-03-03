@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TWTCMachineLearning</name>
+    </assembly>
+    <members>
+        <member name="M:TWTCMachineLearning.NetworkStartInfo.#ctor(System.String,System.Int32[],System.Double,System.String,System.Int32)">
+            <summary>
+            Starting information for the neural network.
+            </summary>
+            <param name="name">Name of the network (used for saving/retrieving weights and biases)</param>
+            <param name="layers">Details of how many neurons should be in each layer</param>
+            <param name="learningRate">Learning rate of the program</param>
+            <param name="location">Folder where the weights and biases will be saved/retrieved</param>
+            <param name="activationMethod">Which method should be used for activation. 0 for tanh, 1 for sigmoid, 2 for ReLU</param>
+        </member>
+        <member name="M:TWTCMachineLearning.NeuralNetwork.#ctor(TWTCMachineLearning.NetworkStartInfo)">
+            <summary>
+            Create a new Neural Network.
+            </summary>
+            <param name="startInfo">Starting information for the neural network</param>
+        </member>
+        <member name="M:TWTCMachineLearning.NeuralNetwork.FindOutput(System.Double[])">
+            <summary>
+             Finds the output for given inputs 
+            </summary>
+            <param name="inputs">Array of inputs</param>
+            <returns></returns>
+        </member>
+        <member name="M:TWTCMachineLearning.NeuralNetwork.Learn(System.Double[])">
+            <summary>
+            Trains the network based on what the expected output should have been. It is assumed that the 'FindOutput' method has been called for the associated inputs.
+            </summary>
+            <param name="expected">Expected output result</param>
+        </member>
+    </members>
+</doc>
